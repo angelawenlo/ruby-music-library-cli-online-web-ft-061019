@@ -57,6 +57,6 @@ class MusicLibraryController
 
     if genre = Genre.find_by_name(input)
       genre.song
-
+    end
   end
 end
