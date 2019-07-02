@@ -19,7 +19,7 @@ class MusicLibraryController
         puts "What would you like to do?"
 
         input = gets.chomp
-        
+
       case input
       when "list songs"
         list_songs
@@ -84,6 +84,6 @@ class MusicLibraryController
       song = Song.all.sort{ |a, b| a.name <=> b.name }[input - 1]
     end
     puts "Playing #{song.name} by #{song.artist.name}" if song
-  
+
   end
 end
