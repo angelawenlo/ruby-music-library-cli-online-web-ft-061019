@@ -57,7 +57,7 @@ class MusicLibraryController
 
     if genre = Genre.find_by_name(input)
       genre.songs.sort{ |a, b| }
-            binding.pry
+      binding.pry
     end
   end
 end
