@@ -56,6 +56,7 @@ class MusicLibraryController
     input = gets.chomp
 
     if genre = Genre.find_by_name(input)
+      binding.pry
       genre.song
     end
   end
